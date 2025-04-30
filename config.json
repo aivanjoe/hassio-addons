@@ -1,0 +1,20 @@
+{
+  "name": "Zigbee2MQTT CPD2",
+  "version": "1.0.0",
+  "slug": "zigbee2mqtt_cpd2",
+  "description": "Zigbee2MQTT Edge para el tercer SLZB",
+  "arch": ["amd64", "aarch64", "armv7"],
+  "image": "ghcr.io/home-assistant/{arch}-addon-base:latest",
+  "startup": "services",
+  "boot": "auto",
+  "options": {
+    "data_path": "/config/zigbee2mqtt_cpd2",
+    "mqtt_base_topic": "zigbeemqtt_cpd2",
+    "mqtt_server": "mqtt://core-mosquitto",
+    "mqtt_user": "s2grupo",
+    "mqtt_password": "1111",
+    "serial_port": "tcp://172.25.99.70:6638",
+    "adapter": "zstack",
+    "frontend_port": 8097
+  }
+}
