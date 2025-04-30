@@ -16,5 +16,15 @@
     "serial_port": "tcp://172.25.99.70:6638",
     "adapter": "zstack",
     "frontend_port": 8097
+  },
+  "schema": {
+    "data_path": "str",
+    "mqtt_base_topic": "str",
+    "mqtt_server": "str",
+    "mqtt_user": "str",
+    "mqtt_password": "str",
+    "serial_port": "str",
+    "adapter": "str",
+    "frontend_port": "int"
   }
 }
